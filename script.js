@@ -14,8 +14,28 @@ document.querySelector('.prev').addEventListener('click', () => {
 });
 
 function updateSlide() {
-    const slidesContainer = document.querySelector('.slides');
+    const slidesContainer = document.querySelector('.events-slides');
     slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+let currentProductSlide = 0;
+
+const productSlides = document.querySelectorAll('.product_slide');
+const totalProductSlides = productSlides.length;
+
+document.querySelector('.product_next').addEventListener('click', () => {
+    currentProductSlide = (currentProductSlide + 1) % totalProductSlides;
+    updateProductSlide();
+});
+
+document.querySelector('.product_prev').addEventListener('click', () => {
+    currentProductSlide = (currentProductSlide - 1 + totalProductSlides) % totalProductSlides;
+    updateProductSlide();
+});
+
+function updateProductSlide() {
+    const slidesContainer = document.querySelector('.products_slides');
+    slidesContainer.style.transform = `translateX(-${currentProductSlide * 480}px)`;
 }
 
 /* <div class="slider">
@@ -42,14 +62,7 @@ function updateSlide() {
     transition: transform 0.5s ease;
 }
 
-.slide {
-    min-width: 100%;
-    height: 180px;
-    box-sizing: border-box;
-    padding: 20px;
-    background: lightgray;
-    text-align: center;
-}
+
 .slide:hover{
     background: red;
 }
