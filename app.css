@@ -29,7 +29,7 @@ body{
  
  /*Header */
 
- .header {
+ header {
     width: 100%;
     min-height: 200px;
     border:1px solid blue;
@@ -44,7 +44,7 @@ nav{
     margin: 0 auto;
     top: 0;
     width: 100%;
-    height: 90px;
+    height: 80px;
     position: fixed;
     background-color: #0D0D0D;
     font-family: Bellefair; 
@@ -60,6 +60,32 @@ nav ul{
 
 nav ul li{
     list-style: none;
+}
+
+nav ul li a{
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #404040;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    transform: scaleX(1); /* Когда наводим курсор, линия становится видимой */
+    transform-origin: center;
 }
 
 .logo{
@@ -91,10 +117,9 @@ nav ul li{
 }
 /*Main*/
 
-.main {
+main {
     min-height: 200vh;
     flex: 1 1 auto;
-    border:1px solid red;
     z-index: 1;
     background-color: #0D0D0D;
     position: relative;
@@ -244,6 +269,7 @@ section#about{
     transition: 1s;
     z-index: 1;
     left: 6em;
+    margin-bottom: 10px;
 }
 
 .container_about a:hover {
@@ -258,7 +284,7 @@ section#about{
     position: absolute;
     left:40%;
     top: 0.7em;    
-    width: 7em;
+    width: 5em;
     font-family: Bellefair;
     font-size: 32px;
     color:white;
@@ -388,14 +414,14 @@ section#events_slider{
 }
 
 li::before {
-    content: '';  /* Создаем пустой псевдоэлемент */
+    content: '';  
     position: absolute;
-    left: -30px;  /* Позиционируем маркер слева */
+    left: -30px; 
     top: 50%;
     width: 17px;
     height: 17px;
-    background-color: white;  /* Цвет маркера */
-    border-radius: 50%;  /* Круглый маркер */
+    background-color: white; 
+    border-radius: 50%; 
     box-shadow: 0px 0px 0px 5px rgba(234, 230, 230, 0.3);  /* Тень только для маркера */
     transform: translateY(-50%);
 }
@@ -414,6 +440,12 @@ li::before {
     align-items: center;
     font-size: 20px;
 }
+
+.click_container a:hover{
+    color: #404040;
+    transition: 0.3s;
+}
+
 
 .beautiful_button{
     position: relative;
@@ -438,7 +470,7 @@ li::before {
     position: absolute;
     left:40%;
     top: 0.7em;    
-    width: 7em;
+    width: 6em;
     color:white;
 }
 
@@ -547,7 +579,8 @@ section#exhibition{
 
 section#products{
     width: 100%;
-    min-height: 1000px;  
+    min-height: 1000px; 
+    margin-bottom: 20px; 
 }
 
 .products_container{
@@ -615,6 +648,10 @@ section#products{
     scale: 0.7;
 }
 
+.product_slide img:hover{
+
+}
+
 .product_slider_manipulators_container{
     width: 100%;
     height: 100%;
@@ -637,6 +674,16 @@ section#products{
     opacity: 0;
     transition: 1s;
     cursor:pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.product_prev{
+    left: 1%;
+}
+
+.product_next{
+    right: 1%;
 }
 
 .products_slider_container:hover{
@@ -671,7 +718,7 @@ section#products{
     position: absolute;
     left:30%;
     top: 0.3em;    
-    width: 7em;
+    width: 4.3em;
     color:white;
     font-family: Bellefair;
     font-size: 54px;
@@ -679,18 +726,162 @@ section#products{
 
 /*Footer*/
 
-.footer {
+footer {
     width: 100%;
-    min-height: 200px;
-    border:1px solid violet;
+    min-height: 300px;
+    background-color: black;
 }
- 
+
+.footer_container{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_footer_top_part{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+
+.social_media{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.social_media p{
+    font-family: Bellefair;
+    font-size:50px;
+    margin-bottom: 10px;
+}
+
+.social_media ul{
+    display: flex;
+    gap: 0.5em;
+}
+
+.social_media ul li{
+    list-style: none;
+}
+
+.social_media ul li a i{
+    width: 50px;
+    height: 50px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+.social_media ul li a i:hover{
+    background: #404040;
+    transition: 0.5s;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+
+.newsletter p{
+    font-size: 20px;
+}
+
+.email_container{
+    display: flex;
+}
+
+#email{
+    background: #0D0D0D;
+    width: 400px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px 0px 0 5px;
+    padding-left: 10px;
+}
+
+#email:focus{
+    background: white;
+}
+
+.sign_up{
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    font-family: Bellefair;
+    border: 1px solid white;
+    transition: 0.5s;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 19px;
+}
+
+.sign_up:hover{
+    background-color: #0D0D0D;
+    color:white;
+}
+
+.footer_bottom_part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid white;
+}
+
+.footer_bottom_part div{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.footer_bottom_part div h3{
+    font-size: 20px;
+}
+
+.footer_bottom_part div h3 i{
+    padding-right: 10px;
+
+}
+
+.footer_bottom_part div p{
+    color: #8d8a8a;
+}
+
+.under_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    gap: 3em;
+    font-size: 15px;
+}
+
+.links{
+    display: flex;
+    gap: 2em;
+}
+
+.under_footer a:hover{
+    color: #404040;
+    transition: 0.3s;
+}
+
 /*Global*/
 .container {
     width: 1400px;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid green;
 }
 
 a{
@@ -701,6 +892,7 @@ a{
 button:hover{
     background: #404040;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 h2{
