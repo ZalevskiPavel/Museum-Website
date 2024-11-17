@@ -1351,7 +1351,7 @@ h2{
 
 @media only screen and (min-width: 540px){
     .container{
-        width: 576px;
+        width: 540px;
     }
 
     /*Navigation*/
@@ -1476,6 +1476,7 @@ h2{
     .tile p{
         display: flex;
     }
+
     /*Products*/
     .products_heading{
         font-size: 40px;
@@ -1490,12 +1491,12 @@ h2{
     }
 
     .products_slider_container{
-        width: 450px;
+        width: 510px;
         height: 200px;
     }
 
     .product_slide{
-        width: 130px;
+        width: 150px;
         height: 200px;
     }
 
@@ -1697,7 +1698,7 @@ h2{
 
     .product_prev, .product_next{
         scale: 1;
-        opacity: 0;
+        opacity: 1;
     }
 
 
@@ -1884,6 +1885,11 @@ h2{
     .product_slide{
         width: 310px;
         height: 490px;
+    }
+
+    .product_prev, .product_next{
+        scale: 1;
+        opacity: 0;
     }
 
     .beautiful_button_store{
