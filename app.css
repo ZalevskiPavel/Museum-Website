@@ -1303,7 +1303,6 @@ h2{
         align-items: center;
     }
 
-
     .social_media p{
         font-size:40px;
     }
@@ -1523,6 +1522,10 @@ h2{
         align-items: center;
     }
 
+    .social_media{
+        align-items: center;
+    }
+
     .footer_bottom_part{
         display: flex;
         flex-direction: column;
@@ -1720,6 +1723,10 @@ h2{
         align-items: center;
     }
 
+    .social_media{
+        align-items: center;
+    }
+
     .footer_bottom_part{
         display: flex;
         flex-direction: row-reverse;
@@ -1908,6 +1915,11 @@ h2{
     .grid_footer_top_part{
         display: grid;
     }
+
+    .social_media{
+        align-items: start;
+    }
+
     .footer_bottom_part div h3{
         font-size: 18px;
     }
