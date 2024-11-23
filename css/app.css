@@ -244,7 +244,6 @@ main {
     background-color: #0D0D0D;
     position: relative;
     top: -10px;
-    
 }
  
 /*About*/
@@ -503,7 +502,7 @@ section#events_slider{
 .first{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('src/slide_1_bg.png');
+    background-image: url('../src/slide_1_bg.png');
 }
 
 .slide_container{
@@ -606,7 +605,7 @@ li::before {
 .second{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('src/slide_2_bg.png');
+    background-image: url('../src/slide_2_bg.png');
 }
 
 /*Manipulation part*/

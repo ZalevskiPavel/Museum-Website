@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         i = 0;
     })
+
     function checkWindowSize() {
         const width = window.innerWidth;
         
@@ -30,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //slider events
     let currentSlide = 0;
-
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
 
@@ -54,10 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const productSlides = document.querySelectorAll('.product_slide');
     const totalProductSlides = productSlides.length;
-
     const slideWidth = document.querySelector('.product_slide');
-
-    //console.log(slideWidth.offsetWidth)
 
     document.querySelector('.product_next').addEventListener('click', () => {
         currentProductSlide = (currentProductSlide + 1) % totalProductSlides;
@@ -72,37 +69,5 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateProductSlide() {
         const slidesContainer = document.querySelector('.products_slides');
         slidesContainer.style.transform = `translateX(-${currentProductSlide * (slideWidth.offsetWidth + 30)}px)`;
-        //console.log(slideWidth.offsetWidth)
     }
 });
-
-/* 480<div class="slider">
-        <div class="slides">
-            <div class="slide">Слайд 1</div>
-            <div class="slide">Слайд 2</div>
-            <div class="slide">Слайд 3</div>
-        </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
-    </div>
-    
-.slider {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    left: 200px;
-    top: 200px;
-    border: 1px solid red;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-
-.slide:hover{
-    background: red;
-}
-    
-    */
