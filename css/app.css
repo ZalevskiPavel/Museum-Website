@@ -28,7 +28,6 @@
     min-height: 200px;
     display: flex;
     align-items: center;
-    
  }
 
 /*navbar*/
@@ -426,7 +425,7 @@ section#events_slider{
 .events{
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 3em;
     padding: 0 20px;
 }
 
