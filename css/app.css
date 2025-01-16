@@ -970,7 +970,7 @@ footer {
     background: white;
 }
 
-.sign_up{
+#sign_up{
     width: 100px;
     height: 35px;
     background-color: white;
@@ -981,7 +981,7 @@ footer {
     font-size: 19px;
 }
 
-.sign_up:hover{
+#sign_up:hover{
     background-color: #0D0D0D;
     color:white;
 }
@@ -1320,7 +1320,7 @@ h2{
         font-size: 12px;
     }
 
-    .sign_up{
+    #sign_up{
         height: 30px;
     }
 

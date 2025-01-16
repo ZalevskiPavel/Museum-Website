@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition and Events</title>
+    <link rel="shortcut icon" href="src/Logo.png">
+    <link rel="stylesheet" href="css/exhibitions_and_events.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="exhibitions_and_events.html">EXHIBITIONS AND EVENTS</a>
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <img src="src/Logo.png" alt="">
+                            <div>UXMCS MUSEUM</div>
+                        </div>
+                    </li>
+                    <!--<li>
+                        <a href="#">PRODUCTS</a>
+                    </li>-->
+                    <li>
+                        <a href="history.html">HISTORY</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">CONTACT</a>
+                    </li>
+                </ul>
+                <!--burger-mm-yammy-->
+                <div class="burger_nav">
+                    <div class="logo">
+                        <img src="src/Logo.png" alt="">
+                        <div>UXMCS MUSEUM</div>
+                    </div>
+                    <div class="menu_button">
+                        <div class="burger_menu">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <p>Menu</p>
+                    </div>
+                </div>
+                <div class="hidden_nav">
+                    <div class="grid_container">
+                        <a href="index.html">
+                            <p>Home</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <a href="exhibitions_and_events.html">
+                            <p>Exhibition and Events</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <!--<a href="">
+                            <p>Products</p>
+                            <div class="arrow">></div>
+                        </a>-->
+                        <a href="history.html">
+                            <p>History</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <a href="contacts.html">
+                            <p>Contact</p>
+                            <div class="arrow">></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <section id="filter">
+                <div class="container filter_container">
+                    <p class="filter_heading">
+                        Exhibition and Events
+                    </p>
+                    <div class="filters">
+                        <div class="filter_element">
+                            <button class="list_header">When <p class="filter_arrow">></p></button>
+                            <div class="list_content date">
+                                <div class="predictable_days">
+                                    <div id="today_button"><span>Today</span></div>
+                                    <div id="tomorrow_button"><span >Tommorrow</span></div>
+                                </div>
+                                <input type="date" id="input_date">
+                            </div>
+                        </div>
+                        <div class="filter_element">
+                            <button class="list_header">Who`s visiting<p class="filter_arrow">></p></button>
+                            <div class="list_content target_audience">
+                                <ul>
+                                    <li>
+                                        <span class="target_criteria">General audience</span>
+                                    </li>
+                                    <li>
+                                        <span class="target_criteria">Adult</span>
+                                    </li>
+                                    <li>
+                                        <span class="target_criteria">Young person (ages 16-24)</span>
+                                    </li>
+                                    <li>
+                                        <span class="target_criteria">Family</span>
+                                    </li>
+                                    <li>
+                                        <span class="target_criteria">Member</span>
+                                    </li>
+                                    <li>
+                                        <span class="target_criteria">Young friends</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_element">
+                            <button class="list_header">What<p class="filter_arrow">></p></button>
+                            <div class="list_content type_of_event">
+                                <ul>
+                                    <li>
+                                        <span class="type_criteria">Exhibition</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Accessible event</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Lectures & discussions</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Festivals & special events</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Perfomance</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Demonstration</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Workshop</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Study days & courses</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Family activity</span>
+                                    </li>
+                                    <li>
+                                        <span class="type_criteria">Members exclusive</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="filter_bar">
+                        <p>Showing results for:</p>
+                        <div id="date_criteria"></div>
+                        <div id="target_criteria"></div>
+                        <div id="type_criteria"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="tales_space">
+                <div class="container space_body">
+                    <div id="space"></div>
+                </div>
+            </section>            
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer_container">
+                    <div class="grid_footer_top_part">
+                        <div class="social_media">
+                            <p>
+                                Connect with us
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-twitter' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-youtube' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-tiktok' ></i>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-vk' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="newsletter">
+                            <p>
+                                Enter your email address to receive our newsletter
+                            </p>
+                            <div class="email_container">
+                                <input type="email" id="email">
+                                <button id="sign_up">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom_part">
+                        <div>
+                            <h3><i class='bx bx-envelope' ></i>Reach us</h3>
+                            <p>museumemail@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3><i class='bx bx-time' ></i>Opening hours</h3>
+                            <p>Daily: 10.00–17.00 (Fridays: 20.30)</p>
+                            <p>Last entry: 16.45 (Fridays: 20.15)</p>
+                        </div>
+                        <div>
+                            <h3><i class='bx bx-happy-beaming'></i>Free entry</h3>
+                            <p>Great Russell Street</p>
+                            <p>London WC1B 3DG</p>
+                            <p>+44 (0)20 7323 8000</p>
+                        </div>
+                        <img src="src/footer-turtle.webp" alt="">
+                    </div>
+                    <div class="under_footer">
+                        <div class="links">
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Accesibility statement</a>
+                            <a href="">Terms of use</a>
+                        </div>
+                        <p><i class='bx bx-copyright' ></i>2024 The Trustees of Museum</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/script_burger.js"></script>
+    <script src="scripts/exhibitions&events.js"></script>
+    <script src="scripts/newsletter.js"></script>
+</body>
+</html>

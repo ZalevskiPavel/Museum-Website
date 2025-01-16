@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     //slider products
-    let currentProductSlide = 0;
+    /*let currentProductSlide = 0;
 
     const productSlides = document.querySelectorAll('.product_slide');
     const totalProductSlides = productSlides.length;
@@ -69,5 +69,5 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateProductSlide() {
         const slidesContainer = document.querySelector('.products_slides');
         slidesContainer.style.transform = `translateX(-${currentProductSlide * (slideWidth.offsetWidth + 30)}px)`;
-    }
+    }*/
 });

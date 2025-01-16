@@ -17,10 +17,7 @@
                         <a href="index.html">HOME</a>
                     </li>
                     <li>
-                        <a href="#">EVENTS</a>
-                    </li>
-                    <li>
-                        <a href="#">EXHIBITIONS</a>
+                        <a href="exhibitions_and_events.html">EXHIBITIONS AND EVENTS</a>
                     </li>
                     <li>
                         <div class="logo">
@@ -28,9 +25,9 @@
                             <div>UXMCS MUSEUM</div>
                         </div>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#">PRODUCTS</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="history.html">HISTORY</a>
                     </li>
@@ -59,18 +56,14 @@
                             <p>Home</p>
                             <div class="arrow">></div>
                         </a>
-                        <a href="">
-                            <p>Events</p>
+                        <a href="exhibitions_and_events.html">
+                            <p>Exhibition and Events</p>
                             <div class="arrow">></div>
                         </a>
-                        <a href="">
-                            <p>Exhibition</p>
-                            <div class="arrow">></div>
-                        </a>
-                        <a href="">
+                        <!--<a href="">
                             <p>Products</p>
                             <div class="arrow">></div>
-                        </a>
+                        </a>-->
                         <a href="history.html">
                             <p>History</p>
                             <div class="arrow">></div>
@@ -153,7 +146,7 @@
             <section id="mail_form">
                 <div class="container">
                     <div class="mail_container">
-                        <div class="form_container">
+                        <form id="form_container">
                             <!--<form action=""></form>-->
                             <div class="name">
                                 <label for="name">Name *</label>
@@ -161,7 +154,7 @@
                             </div>
 
                             <div class="email">
-                                <label for="email">Your email *</label>
+                                <label for="email_form">Your email *</label>
                                 <input type="email" id="email_form" placeholder="Your email">
                             </div>
 
@@ -190,8 +183,8 @@
                                 <label for="message">Your message *</label>
                                 <textarea name="" id="message"  placeholder="Please provide a complete description of your enquiry"></textarea>
                             </div>
-                            <button>Submit <p>></p></button>
-                        </div>
+                            <button id="submit">Submit<p>></p></button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -244,7 +237,7 @@
                             </p>
                             <div class="email_container">
                                 <input type="email" id="email">
-                                <button class="sign_up">Sign Up</button>
+                                <button id="sign_up">Sign Up</button>
                             </div>
                         </div>
                     </div>
@@ -281,5 +274,7 @@
     </div>
     <script src="scripts/script_burger.js"></script>
     <script src="scripts/script_accordeon.js"></script>
+    <script src="scripts/newsletter.js"></script>
+    <script src="scripts/contact_form.js"></script>
 </body>
 </html>

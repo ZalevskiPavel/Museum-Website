@@ -17,10 +17,7 @@
                         <a href="index.html">HOME</a>
                     </li>
                     <li>
-                        <a href="#">EVENTS</a>
-                    </li>
-                    <li>
-                        <a href="#">EXHIBITIONS</a>
+                        <a href="exhibitions_and_events.html">EXHIBITIONS AND EVENTS</a>
                     </li>
                     <li>
                         <div class="logo">
@@ -28,9 +25,9 @@
                             <div>UXMCS MUSEUM</div>
                         </div>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#">PRODUCTS</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="history.html">HISTORY</a>
                     </li>
@@ -59,18 +56,14 @@
                             <p>Home</p>
                             <div class="arrow">></div>
                         </a>
-                        <a href="">
-                            <p>Events</p>
+                        <a href="exhibitions_and_events.html">
+                            <p>Exhibition and Events</p>
                             <div class="arrow">></div>
                         </a>
-                        <a href="">
-                            <p>Exhibition</p>
-                            <div class="arrow">></div>
-                        </a>
-                        <a href="">
+                        <!--<a href="">
                             <p>Products</p>
                             <div class="arrow">></div>
-                        </a>
+                        </a>-->
                         <a href="history.html">
                             <p>History</p>
                             <div class="arrow">></div>
@@ -108,7 +101,7 @@
                                 <div class="circle circle_about"></div>
                             </div>
                             <div class="text_under_image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque et, condimentum iaculis ac. Enim leo sit vestibulum vulputate placerat vulputate. Quis egestas pellentesque faucibus scelerisque consectetur amet. Imperdiet in posuere tempus enim sit semper turpis faucibus lectus. Eget et tempor dolor, amet, vel sit tellus sem. Lectus sed leo neque ut id nunc, amet. Ante non, tortor nisl, vitae orci lacus ipsum vehicula eu. Bibendum.</div>
-                            <a href="" target="_blank">
+                            <a href="history.html">
                                 <span>Know More</span>
                             </a>
                         </div>
@@ -124,7 +117,7 @@
                             Upcoming Events
                             <div class="heading_line_bottom"></div>
                         </div>
-                        <button class="view">view all</button>
+                        <button class="view" onclick="window.location.href='exhibitions_and_events.html'">view all</button>
                     </div>
                     <div class="slider_events_container">
                         <div class="events-slides">
@@ -202,7 +195,7 @@
                                 Exhibitions
                                 <div class="heading_line_bottom"></div>
                             </div>
-                            <button class="view">view all</button>
+                            <button class="view" onclick="window.location.href='exhibitions_and_events.html'">view all</button>
                         </div>
                         <div class="image_container">
                             <a href="" class="tile">
@@ -258,7 +251,7 @@
                     </div>
                 </div>
             </section>
-            <section id="products">
+            <!--<section id="products">
                 <div class="container">
                     <div class="products_container">
                         <div class="products_heading">
@@ -319,7 +312,7 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </section>-->
         </main>
         <footer>
             <div class="container">
@@ -369,7 +362,7 @@
                             </p>
                             <div class="email_container">
                                 <input type="email" id="email">
-                                <button class="sign_up">Sign Up</button>
+                                <button id="sign_up">Sign Up</button>
                             </div>
                         </div>
                     </div>
@@ -405,5 +398,6 @@
         </footer>
     </div>
     <script src="scripts/script.js"></script>
+    <script src="scripts/newsletter.js"></script>
 </body>
 </html>

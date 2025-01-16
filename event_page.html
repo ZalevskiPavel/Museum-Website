@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="src/Logo.png">
+    <link rel="stylesheet" href="css/event.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="exhibitions_and_events.html">EXHIBITIONS AND EVENTS</a>
+                    </li>
+                    <li>
+                        <div class="logo">
+                            <img src="src/Logo.png" alt="">
+                            <div>UXMCS MUSEUM</div>
+                        </div>
+                    </li>
+                    <!--<li>
+                        <a href="#">PRODUCTS</a>
+                    </li>-->
+                    <li>
+                        <a href="history.html">HISTORY</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">CONTACT</a>
+                    </li>
+                </ul>
+                <!--burger-mm-yammy-->
+                <div class="burger_nav">
+                    <div class="logo">
+                        <img src="src/Logo.png" alt="">
+                        <div>UXMCS MUSEUM</div>
+                    </div>
+                    <div class="menu_button">
+                        <div class="burger_menu">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <p>Menu</p>
+                    </div>
+                </div>
+                <div class="hidden_nav">
+                    <div class="grid_container">
+                        <a href="index.html">
+                            <p>Home</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <a href="exhibitions_and_events.html">
+                            <p>Exhibition and Events</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <!--<a href="">
+                            <p>Products</p>
+                            <div class="arrow">></div>
+                        </a>-->
+                        <a href="history.html">
+                            <p>History</p>
+                            <div class="arrow">></div>
+                        </a>
+                        <a href="contacts.html">
+                            <p>Contact</p>
+                            <div class="arrow">></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="header_container">
+                   
+                    <div class="event_base_info">
+                        <div class="event_name header_name"></div>
+                        <div class="event_dates">
+                            <div id="event_type"></div>
+                            /
+                            <div class="event_duration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+        <div class="blackout"></div>
+            <section id="pop_up">
+                <div class="form_heading">
+                    Book ticket
+                </div>
+                <div id="close"><i class='bx bx-x' ></i></div>
+                    <form action="" class="booking_form">
+                        <div class="email">
+                            <label for="email_form">Your email *</label>
+                            <input type="email" id="email_form" placeholder="Your email">
+                        </div>
+                        <div class="credit_card">
+                            <label for="cred_card_form">Your credit card *</label>
+                            <input type="text" id="cred_card_form" placeholder="xxxx xxxx xxxx xxxx">
+                        </div>
+                        <div class="date_form">
+                            <label for="date_input_form">Select date *</label>
+                            <input type="date" id="date_input_form">
+                        </div>
+                        <button type="submit" id="form_button">Get ticket<p>></p></button>
+                    </form>
+            </section>
+            <section id="worms">
+                <div class="container">
+                    <div class="worms_container">
+                        <div class="worms_themselves">
+                            <a href="index.html">Home</a>
+                            <p>></p>
+                            <a href="exhibitions_and_events.html">Exhibition and events</a>
+                            <p>></p>
+                            <a href="event_page.html" class="event_name"></a>
+                        </div>
+                        <div class="share_part">
+                            <p>Share the page</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-twitter' ></i>
+                                    </a>
+                                </li>                                
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-vk' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="event_info">
+                <div class="container about_info">
+                    <div class="introduction_and_description_part">
+                        <div id="intro"></div>
+                        <div id="description"></div>
+                    </div>
+                    <div class="info_about_event_part">
+                        <div class="info_about_sliced">
+                            <div class="date_and_time">
+                                <div class="date">
+                                    <i class='bx bxs-calendar'></i>
+                                    <div class="event_duration"></div>
+                                </div>
+                                <div id="time"></div>
+                            </div>
+                            <div class="e_price">
+                                <i class='bx bx-wallet'></i>
+                                <p id="price"></p>
+                            </div>
+                            <button id="book_button">Book tickets<p>></p></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="spacer"></section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer_container">
+                    <div class="grid_footer_top_part">
+                        <div class="social_media">
+                            <p>
+                                Connect with us
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-twitter' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-youtube' ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-tiktok' ></i>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="">
+                                        <i class='bx bxl-vk' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="newsletter">
+                            <p>
+                                Enter your email address to receive our newsletter
+                            </p>
+                            <div class="email_container">
+                                <input type="email" id="email">
+                                <button id="sign_up">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom_part">
+                        <div>
+                            <h3><i class='bx bx-envelope' ></i>Reach us</h3>
+                            <p>museumemail@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3><i class='bx bx-time' ></i>Opening hours</h3>
+                            <p>Daily: 10.00–17.00 (Fridays: 20.30)</p>
+                            <p>Last entry: 16.45 (Fridays: 20.15)</p>
+                        </div>
+                        <div>
+                            <h3><i class='bx bx-happy-beaming'></i>Free entry</h3>
+                            <p>Great Russell Street</p>
+                            <p>London WC1B 3DG</p>
+                            <p>+44 (0)20 7323 8000</p>
+                        </div>
+                        <img src="src/footer-turtle.webp" alt="">
+                    </div>
+                    <div class="under_footer">
+                        <div class="links">
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Accesibility statement</a>
+                            <a href="">Terms of use</a>
+                        </div>
+                        <p><i class='bx bx-copyright' ></i>2024 The Trustees of Museum</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/script_burger.js"></script>
+    <script src="scripts/script_event.js"></script>
+    <script src="scripts/newsletter.js"></script>
+    <script src="scripts/book_ticket.js"></script>
+</body>
+</html>

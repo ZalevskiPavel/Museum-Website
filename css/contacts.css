@@ -448,7 +448,7 @@ main{
     flex-direction: column;
 }
 
-.form_container{
+#form_container{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -458,28 +458,29 @@ main{
     margin-top: 50px;
 }
 
-.form_container div{
+#form_container div{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.form_container label{
+#form_container label{
     color: white;
     font-size: 20px;
 }
 
-.form_container select{
+#form_container select{
     font-family: Poppins;
 }
-.form_container textarea{
+
+#form_container textarea{
     resize: vertical;
     min-height: 90px;
 }
 
-.form_container input, 
-.form_container select, 
-.form_container textarea{
+#form_container input, 
+#form_container select, 
+#form_container textarea{
     background: none;
     border: 1px solid white;
     color:#bab5b5;
@@ -489,16 +490,16 @@ main{
     font-family: Poppins;
 }
 
-.form_container input:focus, 
-.form_container select:focus, 
-.form_container textarea:focus{
+#form_container input:focus, 
+#form_container select:focus, 
+#form_container textarea:focus{
     background-color: #ffffff;
     color: #000000;
     transition: 0.5s;
 }
 
-.form_container input::placeholder, 
-.form_container textarea::placeholder{
+#form_container input::placeholder, 
+#form_container textarea::placeholder{
     font-family: Poppins;
     color:#bab5b5;
 }
@@ -508,7 +509,7 @@ main{
     text-align: start;
 }
 
-.form_container button{
+#form_container button{
     width: 120px;
     height: 40px;
     align-self: flex-end;
@@ -523,7 +524,7 @@ main{
     margin-top: 20px;
 }
 
-.form_container button p{
+#form_container button p{
     width: 20px;
     height: 20px;
     background-color: #000000;
@@ -536,13 +537,17 @@ main{
     transition: 0.5s;
 }
 
-.form_container button:hover{
+#form_container button:hover{
     background-color: #000000;
     color:#FFFFFF;
     p{
         background-color: #ffffff;
         color: #000000;
     }
+}
+
+.error{
+    color: red;
 }
 
 /*Footer*/
@@ -636,7 +641,7 @@ footer {
     background: white;
 }
 
-.sign_up{
+#sign_up{
     width: 100px;
     height: 35px;
     background-color: white;
@@ -647,7 +652,7 @@ footer {
     font-size: 19px;
 }
 
-.sign_up:hover{
+#sign_up:hover{
     background-color: #0D0D0D;
     color:white;
 }
@@ -739,19 +744,19 @@ a{
     }
 
     /*Mail_form*/
-    .form_container{
+    #form_container{
         padding: 20px;
     }
 
-    .form_container input, 
-    .form_container select, 
-    .form_container textarea{
+    #form_container input, 
+    #form_container select, 
+    #form_container textarea{
 
         font-size: 12px;
         padding: 0 10px;
     }
 
-    .form_container button{
+    #form_container button{
         width: 100%;
         justify-content: space-between;
         padding: 0 20px;
@@ -787,7 +792,7 @@ a{
         font-size: 12px;
     }
 
-    .sign_up{
+    #sign_up{
         height: 30px;
     }
 
